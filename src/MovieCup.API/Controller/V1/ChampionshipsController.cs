@@ -7,19 +7,18 @@ using System.Threading.Tasks;
 namespace MovieCup.API.Controller.V1
 {
     [ApiController]
-    [Route("[controller]")]
+    [Route("v1/[controller]")]
     public class ChampionshipsController : ControllerBase
     {
         readonly IChampionshipAppService championshipAppService;
 
-        public ChampionshipsController([NotNull] IChampionshipAppService championshipAppService) =>
+        public ChampionshipsController(IChampionshipAppService championshipAppService) =>
             this.championshipAppService = championshipAppService;
 
         [HttpPost]
         public async Task<IActionResult> Post([FromBody] AddChampionshipCommand command)
         {
-            await championshipAppService.Create(command);
-            return Ok();
+            return Ok(await championshipAppService.Create(command));
         }
     }
 }

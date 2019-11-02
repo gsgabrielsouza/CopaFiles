@@ -16,7 +16,8 @@ namespace MovieCup.API
                     {
                         options.JsonSerializerOptions.PropertyNamingPolicy = JsonNamingPolicy.CamelCase;
                     });
-
+            
+            
             services.AddIoC();
         }
 

@@ -10,12 +10,19 @@ namespace MovieCup.Infra.IoC
     {
         public static IServiceCollection AddIoC(this IServiceCollection services)
         {
+            IntegrationIoC(services);
+            ApplicationIoC(services);
+
+            return services;
+        }
+
+        private static void IntegrationIoC(IServiceCollection services) => 
             services.AddScoped<IFilmesService, FilmesService>();
 
-
+        private static void ApplicationIoC(IServiceCollection services)
+        {
             services.AddScoped<IMovieAppService, MovieAppService>();
-            
-            return services;
+            services.AddScoped<IChampionshipAppService, ChampionshipAppService>();
         }
     }
 }

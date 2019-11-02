@@ -9,7 +9,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MovieCup.API", "src\MovieCu
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Service", "Service", "{67F65F16-1801-4A86-9E67-4E8613D07D1B}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Application", "Application", "{96D3DA82-2047-4B77-A12A-7062D1E970F7}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Application", "Application", "{72F30512-67F4-4D02-A518-8960A3C61DAA}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{6F54437E-B572-454B-AA1F-1B4C84F169FA}"
 EndProject
@@ -19,13 +19,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MovieCup.Domain", "src\Movi
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Integration", "Integration", "{46901F03-C8C0-4C69-BD65-CDF5C195EA80}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MovieCup.Infra.Integration.Filmes", "src\MovieCup.Infra.Integration.Filmes\MovieCup.Infra.Integration.Filmes.csproj", "{94818939-3DAF-499C-B4E0-0CB0928B468D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MovieCup.Infra.Integration.Filmes", "src\MovieCup.Infra.Integration.Filmes\MovieCup.Infra.Integration.Filmes.csproj", "{94818939-3DAF-499C-B4E0-0CB0928B468D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MovieCup.Infra.IoC", "src\MovieCup.Infra.IoC\MovieCup.Infra.IoC.csproj", "{4729C989-FCFD-494F-AF8B-650C1E9E3CDB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MovieCup.Infra.IoC", "src\MovieCup.Infra.IoC\MovieCup.Infra.IoC.csproj", "{4729C989-FCFD-494F-AF8B-650C1E9E3CDB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MovieCup.Application", "MovieCup.Application\MovieCup.Application.csproj", "{72F30512-67F4-4D02-A518-8960A3C61DAA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MovieCup.Application", "src\MovieCup.Application\MovieCup.Application.csproj", "{F852AEEF-6430-43DC-9307-947F0D257676}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MovieCup.ApplicationService.Test", "MovieCup.ApplicationService.Test\MovieCup.ApplicationService.Test.csproj", "{5102A0A5-B3F2-42D1-AFBB-6E97E365D356}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MovieCup.ApplicationService.Test", "src\MovieCup.ApplicationService.Test\MovieCup.ApplicationService.Test.csproj", "{5102A0A5-B3F2-42D1-AFBB-6E97E365D356}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -37,6 +37,10 @@ Global
 		{7CD34605-86CA-4519-9DD7-8B91B1C87302}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7CD34605-86CA-4519-9DD7-8B91B1C87302}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7CD34605-86CA-4519-9DD7-8B91B1C87302}.Release|Any CPU.Build.0 = Release|Any CPU
+		{72F30512-67F4-4D02-A518-8960A3C61DAA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{72F30512-67F4-4D02-A518-8960A3C61DAA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{72F30512-67F4-4D02-A518-8960A3C61DAA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{72F30512-67F4-4D02-A518-8960A3C61DAA}.Release|Any CPU.Build.0 = Release|Any CPU
 		{A23720D9-5EA0-4A07-A5B9-8F1F14566AF5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{A23720D9-5EA0-4A07-A5B9-8F1F14566AF5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A23720D9-5EA0-4A07-A5B9-8F1F14566AF5}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -49,10 +53,10 @@ Global
 		{4729C989-FCFD-494F-AF8B-650C1E9E3CDB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4729C989-FCFD-494F-AF8B-650C1E9E3CDB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4729C989-FCFD-494F-AF8B-650C1E9E3CDB}.Release|Any CPU.Build.0 = Release|Any CPU
-		{72F30512-67F4-4D02-A518-8960A3C61DAA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{72F30512-67F4-4D02-A518-8960A3C61DAA}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{72F30512-67F4-4D02-A518-8960A3C61DAA}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{72F30512-67F4-4D02-A518-8960A3C61DAA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F852AEEF-6430-43DC-9307-947F0D257676}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F852AEEF-6430-43DC-9307-947F0D257676}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F852AEEF-6430-43DC-9307-947F0D257676}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F852AEEF-6430-43DC-9307-947F0D257676}.Release|Any CPU.Build.0 = Release|Any CPU
 		{5102A0A5-B3F2-42D1-AFBB-6E97E365D356}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{5102A0A5-B3F2-42D1-AFBB-6E97E365D356}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5102A0A5-B3F2-42D1-AFBB-6E97E365D356}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -67,7 +71,7 @@ Global
 		{46901F03-C8C0-4C69-BD65-CDF5C195EA80} = {72F226F4-0414-485C-971C-E83E0C91053F}
 		{94818939-3DAF-499C-B4E0-0CB0928B468D} = {46901F03-C8C0-4C69-BD65-CDF5C195EA80}
 		{4729C989-FCFD-494F-AF8B-650C1E9E3CDB} = {72F226F4-0414-485C-971C-E83E0C91053F}
-		{72F30512-67F4-4D02-A518-8960A3C61DAA} = {96D3DA82-2047-4B77-A12A-7062D1E970F7}
+		{F852AEEF-6430-43DC-9307-947F0D257676} = {72F30512-67F4-4D02-A518-8960A3C61DAA}
 		{5102A0A5-B3F2-42D1-AFBB-6E97E365D356} = {E32DDDF2-3B77-47CA-B5FD-B72AF48CCEFE}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
