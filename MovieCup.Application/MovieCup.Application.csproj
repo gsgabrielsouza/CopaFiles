@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\src\MovieCup.Domain\MovieCup.Domain.csproj" />
+    <ProjectReference Include="..\src\MovieCup.Infra.Integration.Filmes\MovieCup.Infra.Integration.Filmes.csproj" />
+  </ItemGroup>
+
+</Project>
