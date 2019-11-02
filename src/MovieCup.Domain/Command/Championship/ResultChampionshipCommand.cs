@@ -2,10 +2,6 @@
 {
     public class ResultChampionshipCommand
     {
-        public ResultChampionshipCommand()
-        {
-        }
-
         public ResultChampionshipCommand(string title)
         {
             Title = title;
