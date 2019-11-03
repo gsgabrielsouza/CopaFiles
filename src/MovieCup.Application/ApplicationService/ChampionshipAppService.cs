@@ -1,4 +1,6 @@
-﻿using MovieCup.Domain;
+﻿using FluentValidation.Validators;
+using MovieCup.Application.Validations.Command;
+using MovieCup.Domain;
 using MovieCup.Domain.Command.Championship;
 using MovieCup.Domain.Entitie;
 using MovieCup.Domain.Interface.Application;
@@ -91,8 +93,9 @@ namespace MovieCup.Application.ApplicationService
             if (command is null)
                 throw new ArgumentNullException(nameof(command));
 
-            if (command.Movies.Count % 2 != 0)
-                throw new ApplicationException(string.Format(ResourceMessage.InvalidCommand, "Movies"));
+            var validator = new AddChampionshipCommandValidator().Validate(command) ;
+            if (!validator.IsValid)
+                throw new ApplicationException(string.Join(" | ", validator.Errors.Select(x => x.ErrorMessage)));
 
             var movies = await movieAppService.GetAll();
             if (!command.Movies.TrueForAll(x => movies.Select(e => e.Id).Contains(x.Id)))
