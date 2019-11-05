@@ -1,0 +1,26 @@
+.Text-center {
+  text-align: center;
+}
+
+.App {
+  margin: 50px;
+}
+
+.App-header {
+  background-color: #6E6E6E;
+  height: 200px;
+  color: #ffffff;
+}
+
+.instruction {
+  width: 50%;
+  margin: auto;
+}
+
+.line {
+  width: 30px;
+}
+
+.title { 
+  color: #A8A8A8;
+}
