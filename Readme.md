@@ -9,7 +9,7 @@ Copa dos melhores filmes selecionados pelos usuários
 - [Docker]( https://docs.docker.com/install/ )
 - [Aspnet Core 3.0](https://dotnet.microsoft.com/download/dotnet-core)
 - [NodeJs](https://nodejs.org/en/download/)
-- 
+
 
 ##### Yarn e React
 

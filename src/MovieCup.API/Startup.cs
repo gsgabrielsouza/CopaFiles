@@ -20,18 +20,6 @@ namespace MovieCup.API
             
             
             services.AddIoC();
-
-            var corsBuilder = new CorsPolicyBuilder();
-            corsBuilder.AllowAnyHeader();
-            corsBuilder.AllowAnyMethod();
-            corsBuilder.AllowAnyOrigin();
-            corsBuilder.WithMethods("OPTIONS");
-            corsBuilder.AllowCredentials();
-
-            services.AddCors(options =>
-            {
-                options.AddPolicy("AllowAll", corsBuilder.Build());
-            });
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
@@ -42,7 +30,6 @@ namespace MovieCup.API
             }
 
             app.UseRouting();
-            app.UseCors();
 
             app.UseEndpoints(endpoints =>
             {
